@@ -5,15 +5,9 @@
 
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
-def Create_Random_List(list_length):
-    import random
-    new_list = []
-    for i in range(list_length):
-        new_list.append(random.randint(-10,10))
-    return new_list
-
+import random
 n = int(input('Введите длину списка: '))
-my_list = Create_Random_List(n)
+my_list = [random.randint(-10,10) for i in range(n)]
 print(my_list)
 
 sum = 0
